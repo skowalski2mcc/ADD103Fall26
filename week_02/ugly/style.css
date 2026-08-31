@@ -1,0 +1,45 @@
+/* General Page styles */
+
+/* Decided to keep a "regular" font with Arial here. Idk, not EVERYTHING can be "ugly" because we need a point of reference. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('uglybg2.jpg');
+}
+
+h1 {
+    color: #b3e322;
+    background-image: url('uglybg1.jpg');
+    line-height: 2.6;
+    text-align: center;
+    font-size: 124px;
+    font-weight: 300;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+}
+
+h2 {
+    color: rgb(255, 15, 15);
+    background-image: url('uglybg3.jpg');
+    line-height: 2.6;
+    font-size: 84px;
+    font-weight: 900;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+p {
+    color: #5b0fcd;
+    text-align: center;
+}
+
+
+/* I originally wanted to put a tiled image of the bee from the Bee Movie here, but I went with the background color for full points on the assignment. Just another example of THE MAN HOLDING US BACK! */
+blockquote {
+    font-style: italic;
+    color: #00ff62;
+    line-height: 0.75;
+    margin: 20px 0;
+    text-align: center;
+    background-color: rgba(13, 251, 255, 0.5);
+}

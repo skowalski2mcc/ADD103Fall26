@@ -1,0 +1,40 @@
+/* CSS file for Course Portal */
+
+head,
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    color: beige;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    background-color: #777777;
+}
+
+.portal-header-img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}

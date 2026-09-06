@@ -43,3 +43,16 @@ blockquote {
     text-align: center;
     background-color: rgba(13, 251, 255, 0.5);
 }
+
+footer {
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    background-color: #777777;
+}

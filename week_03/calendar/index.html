@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Birth Month Calendar</title>
+        <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <h1>Birthday Month Calendar</h1>
+        <table>
+                <!-- Calendar for February 2027 instead of 2026 to prove that I can use colspan correctly -->
+                <caption>February 2027</caption>
+                <thead>
+                        <tr>
+                                <th scope="col">Sunday</th>
+                                <th scope="col">Monday</th>
+                                <th scope="col">Tuesday</th>
+                                <th scope="col">Wednesday</th>
+                                <th scope="col">Thursday</th>
+                                <th scope="col">Friday</th>
+                                <th scope="col">Saturday</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                                <!-- I could put colspan="1" here, but it's not necessary -->
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                        </tr>
+                        <tr>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                        </tr>
+                        <tr>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                        </tr>
+                        <tr>
+                                <td>21</td>
+                                <!-- Date number intentionally left blank so that the image takes up the entire cell -->
+                                <td class="birthday"><img src="../images/skowsRaccoonHeadSOTD.png"
+                                                alt="My online persona avatar to mark my birthday">
+                                </td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                        </tr>
+                        <tr>
+                                <td>28</td>
+                                <td colspan="6"></td>
+                        </tr>
+                </tbody>
+        </table>
+        <footer>
+                <p>&copy; 2026 My Portfolio</p>
+                <p><a href="../../index.html">Back to Student Portal</a></p>
+        </footer>
+</body>
+
+</html>

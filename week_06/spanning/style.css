@@ -1,0 +1,87 @@
+/* CSS file for Spanning & Grid Areas */
+
+/* This is all just placeholder stuff for now I think?? */
+
+:root {
+    --main-color: darkslategray;
+    --accent-color: tan;
+    --background-color: oldlace;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: black;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+header p {
+    margin: 5px;
+}
+
+main {
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* The parent container has five equal Grid columns. */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+/* The main display spans all five columns. */
+.main-display {
+    grid-column: 1 / -1;
+    height: 400px;
+}
+
+.main-display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* The thumbnails fill the five columns below. */
+.thumb {
+    cursor: pointer;
+    border: 3px solid var(--main-color);
+}
+
+.thumb img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.thumb:hover {
+    border-color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: white;
+}

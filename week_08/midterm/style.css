@@ -1,0 +1,232 @@
+/* CSS file for the Movie Review Blog */
+/* Color scheme from SheCodes: https://www.shecodes.io/palettes/700 */
+
+:root {
+    --background-color: #222832;
+    --main-color: #2f3847;
+    --accent-color: #e7a117;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: white;
+    margin: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #ffca64;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Header and Navigation */
+
+.site-header {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.site-header p {
+    margin: 5px 0 20px;
+}
+
+nav {
+    background-color: var(--background-color);
+    padding: 12px;
+}
+
+/* Flexbox keeps the navigation links in a row. */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-weight: bold;
+}
+
+/* Main Content */
+
+.page-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+h2 {
+    color: var(--accent-color);
+}
+
+/* Review Cards */
+
+/* One column on mobile, then three columns on desktop. */
+.review-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: var(--main-color);
+    border-radius: 6px;
+    padding: 12px;
+}
+
+/* Using the same responsive image sizing as Week 5. */
+.movie-card img {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h3 {
+    margin: 5px 0;
+}
+
+.card-content p {
+    margin: 5px 0;
+}
+
+.all-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Smaller cards for the All Reviews page. */
+.archive-grid {
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.archive-card {
+    padding: 8px;
+}
+
+.archive-card img {
+    max-width: 160px;
+}
+
+.archive-card .card-content {
+    padding: 6px;
+}
+
+.archive-card h3 {
+    font-size: 16px;
+}
+
+.archive-card p {
+    font-size: 14px;
+}
+
+/* Empty review slots on the archive page. */
+.poster-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 160px;
+    height: 237px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    color: white;
+}
+
+/* Individual Reviews */
+
+.full-review {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.review-overview {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.review-overview img {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.review-details {
+    padding: 10px;
+}
+
+.review-details h3 {
+    margin: 0;
+    color: var(--accent-color);
+}
+
+.review-details p {
+    margin: 6px 0;
+}
+
+.review-writing {
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.review-writing h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 5px;
+}
+
+/* Desktop Layout */
+
+@media (min-width: 768px) {
+    .review-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .archive-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .review-overview {
+        grid-template-columns: 240px 1fr;
+    }
+
+    .review-overview img {
+        margin: 0;
+    }
+}

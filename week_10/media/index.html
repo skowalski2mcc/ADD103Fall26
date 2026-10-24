@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nature Break</title>
+
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Nature Break</h1>
+        <p>Some scenery and water sounds for a quick break.</p>
+
+        <!-- Muted so the header can autoplay. -->
+        <!-- Video from Pixabay: https://pixabay.com/videos/river-mountains-bridge-nature-14205/ -->
+        <video autoplay muted loop poster="images/scenery-poster.jpg">
+            <source src="media/scenery.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </header>
+
+    <main class="page-content">
+
+        <section>
+            <h2>Lake Sounds</h2>
+            <p>Press play to listen to the lake sounds.</p>
+            <!-- Audio from Pixabay: https://pixabay.com/sound-effects/nature-lake-lapping-at-the-bank-331501/ -->
+            <audio controls>
+                <source src="media/lake-sounds.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Scenery Video</h2>
+            <p>The same video, with play and pause controls.</p>
+            <video controls poster="images/scenery-poster.jpg">
+                <source src="media/scenery.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 My Portfolio</p>
+        <p><a href="../../index.html">Back to Student Portal</a></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flower Gallery</title>
+
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Flower Gallery</h1>
+        <p>I'm taking a floral design class, so I wanted to do flowers for this assignment.</p>
+    </header>
+
+    <main class="page-content">
+
+        <section>
+            <h2>Pink Tulips</h2>
+            <p>I like the ruffled edges on these tulips!</p>
+
+            <!-- Three sizes of the tulip photo. -->
+            <!-- Photo from Pixabay: https://pixabay.com/photos/tulips-garden-garden-flowers-flower-3339416/ -->
+            <img src="images/tulips-medium.jpg"
+                srcset="images/tulips-small.jpg 480w, images/tulips-medium.jpg 800w, images/tulips-large.jpg 1200w"
+                sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px"
+                alt="Two pale pink tulips with fringed petals against a dark background">
+        </section>
+
+        <div class="photo-wall">
+            <section>
+                <h2>Pink Orchid</h2>
+                <p>The spots on the petals are a lot easier to see up close.</p>
+
+                <!-- This crop is used on smaller screens. -->
+                <!-- Photo from Pixabay: https://pixabay.com/photos/orchid-phalaenopsis-flowers-plants-4516451/ -->
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/orchid-closeup.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="images/orchid-wide.webp" type="image/webp">
+                    <img src="images/orchid-wide.jpg"
+                        alt="A pink orchid with purple-speckled petals and a yellow center">
+                </picture>
+            </section>
+
+            <section>
+                <h2>White Daisy</h2>
+                <p>Just a simple white daisy by the water.</p>
+                <!-- Photo from Pixabay: https://pixabay.com/photos/daisy-flower-lake-nature-summer-5383056/ -->
+                <img src="images/daisy.webp" alt="A white daisy with a yellow center beside a lake">
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 My Portfolio</p>
+        <p><a href="../../index.html">Back to Student Portal</a></p>
+    </footer>
+
+</body>
+
+</html>

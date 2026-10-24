@@ -1,0 +1,87 @@
+/* CSS file for the Flower Gallery */
+/* Color scheme from SheCodes: https://www.shecodes.io/palettes/1491 */
+
+:root {
+    --background-color: #ffcbcb;
+    --main-color: #132743;
+    --accent-color: #407088;
+}
+
+body {
+    background-color: var(--background-color);
+    color: #132743;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #ffb5b5;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-header h1 {
+    color: var(--main-color);
+    margin: 0;
+    font-size: 40px;
+}
+
+.page-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+/* Keeps the photos from getting stretched or squished. */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.photo-wall {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.site-footer {
+    background-color: #ffb5b5;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-footer p {
+    margin: 5px;
+}
+
+/* Two columns on bigger screens. */
+@media (min-width: 768px) {
+    .photo-wall {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+a {
+    color: var(--main-color);
+}
+
+a:hover {
+    color: black;
+}

@@ -1,0 +1,80 @@
+/* CSS file for Nature Break */
+/* Color scheme from SheCodes: https://www.shecodes.io/palettes/1313 */
+
+:root {
+    --background-color: #ececec;
+    --main-color: #385170;
+    --accent-color: #9fd3c7;
+}
+
+body {
+    background-color: var(--background-color);
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.site-header {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.site-header h1 {
+    color: var(--main-color);
+    margin: 0;
+    font-size: 40px;
+}
+
+.page-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: var(--main-color);
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+audio,
+video {
+    display: block;
+    width: 100%;
+}
+
+/* Keeps the videos from getting stretched. */
+video {
+    height: auto;
+    border-radius: 6px;
+}
+
+.site-footer {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-footer p {
+    margin: 5px;
+}
+
+.site-footer a {
+    color: white;
+}
+
+.site-footer a:hover {
+    color: var(--accent-color);
+}

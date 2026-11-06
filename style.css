@@ -3,7 +3,7 @@
 head,
 body {
     font-family: Arial, sans-serif;
-    background-color: grey;
+    background-color: #555555;
     color: beige;
     line-height: 2;
 }
@@ -34,4 +34,16 @@ footer a:hover {
     height: auto;
     display: block;
     margin: 20px auto;
+}
+
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #dcc8ff;
+}
+
+a:hover {
+    color: #a8e6e0;
 }
